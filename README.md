@@ -29,7 +29,7 @@ Just remember to change the `!include` statements inside the top of the files.
 If you want to use the always up-to-date version in this repo, use the following:
 
 ```c#
-!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/release/1-0/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/master/C4_Container.puml
 ```
 
 Now let's create a C4 Container diagram:
@@ -38,7 +38,7 @@ After you have included `C4_Container.puml` you can use the defined macro defini
 
 ```csharp
 @startuml C4_Elements
-!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/release/1-0/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/master/C4_Container.puml
 
 Person(personAlias, "Label", "Optional Description")
 Container(containerAlias, "Label", "Technology", "Optional Description")
@@ -48,7 +48,7 @@ Rel(personAlias, containerAlias, "Label", "Optional Technology")
 @enduml
 ```
 
-![C4_Elements](http://www.plantuml.com/plantuml/png/ZOvFIyGm4CNl-HIrfmgsKTYJfvNgGLXnySzvoQRZDZ2Pb9a9ij_UMB4YedXwBu7tczzQrB7cY5M_sjqWH20LSnB8OnuWCrQZwYINrh9xxGv1nxpF0kmJAP1sFaNR9oBm2aDxIo-9ezEGg7qyYa8Ksw_QBJhIvxkDPK1m0lQYFI__kp9K5mYucug1CLjWITHCSrnXS79MrHkt1wnBkP_UkGwhQn3FONxLfsQ1DFwp_PW-WHyfOJeS_m1z23Sont-lcmV0xyABnU-8Bvr2M0CDEU8R "C4_Elements")
+![C4_Elements](http://www.plantuml.com/plantuml/png/ZOzDIyGm48Rl-HMrfmgskUp9qqhr8Aou-75Uikcu3KmcPMQ2xBytMx4Yeknf9WFlypvPYphM7B7gLxixX0YaOYu2USm3PCPgL9tasbfsxzqXw9ZtMO1z8WNIpgTe-qG4Nc5ex-ajSNGQ4hNFHr68OljLkqL7-lgmiT6L6vVJhcJK1GBkfb9kp1PO4ZNJF6umEBcgwetR0zPbUPnEI8VLBOZdCB_gIxD06l-r_Og-W1yfOJeS_m5zkZOoZtFRpHFWJ-75uc_4jquXh866q-y_0000 "C4_Elements")
 
 In addition to this, it is also possible to define a system or component boundary.
 
@@ -56,7 +56,7 @@ Take a look a look at the following sample of a C4 Container Diagram:
 
 ```csharp
 @startuml Basic Sample
-!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/release/1-0/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/master/C4_Container.puml
 
 Person(admin, "Administrator")
 System_Boundary(c1, "Sample System") {
@@ -69,18 +69,18 @@ Rel(web_app, twitter, "Gets tweets from", "HTTPS")
 @enduml
 ```
 
-![Basic Sample](http://www.plantuml.com/plantuml/png/JL1DJuD04BtpAqQyqAI0DPuybHAZ9jOGeNfijZ2rc-p7PdS8QOp_tK5gAvS9ypxclLq64fvwhM0bWcoX5jefZAwaQLNVOUyL78XSkCzpBuRiKzAXt_K1VMiDeQ6ijJelhJ7O4dRfizbRhmL9QzBw60XroCkxj5B2q6RzadjKA0BcY_I6zriMaf06VUOuGXHLw8CrYUYqD7E8Yt7AG5wGzV4icXotAzkRJlXZqYwOD2M62Ojdy1K1VsVdPC3TLZZ7p0_SGU6Sakrlm9XNvVKSYhhANXyQbdY4ssm1w_Ton0gbx11WB1k0B71J9vYYUqLoFDaCaWWzaDIe-5RWYD-da0bD8FkSQ0n6RwZ-obrYRG8hUJurJLKpQoITqOlD8rBWNnp7tblzNx94q_43_W00 "Basic Sample")
+![Basic Sample](http://www.plantuml.com/plantuml/png/JL1DIyD04BtdLupnaaARKF7agMaG5Qm4a-gnR9EfNTYFPNUMKCJ_xiHKQov3vdtCUxiA93n5hM0jWkoW4TefJAwawLJiCNe5Ho8Nxeh2Yo7_a7IC-nZGTzOG6iexgulA6eCTORzuCWVhjI1fpQ8v1K8TYkfsKIjXQBjvBhJWdUVLZZKaf46VExwU93NwO4qcUYtD7D9od3AG5sHzEaiciztQHjCBVygw9PEci31XwGm-4-3lppaRSByJpZ7p7VTGEgTazvCjvLLrFOUogVEN-vOb7k4cNyBchHgnKYax11Xx1Y0BND89fkYeI8udsq4I5m6I6XNV2XpnwnmoembadpEDmUGLrM-vIwnjO2NFnxQj6sOnwHBwOlE05FWNnt7mLl-NhD3qumD-0m00 "Basic Sample")
 
 ## Supported Diagram Types
 
 * System Context & System Landscape diagrams
-  * Import: `!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/release/1-0/C4_Context.puml`
+  * Import: `!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/master/C4_Context.puml`
   * Macros: `Person`, `Person_Ext`, `System`, `System_Ext`, `SystemDb`, `SystemDb_Ext`, `Boundary`, `System_Boundary`, `Enterprise_Boundary`
 * Container diagram
-  * Import: `!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/release/1-0/C4_Container.puml`
+  * Import: `!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/master/C4_Container.puml`
   * Additional Macros: `Container`, `ContainerDb`, `Container_Boundary`
 * Component diagram
-  * Import: `!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/release/1-0/C4_Component.puml`
+  * Import: `!includeurl https://raw.githubusercontent.com/Connected-Information-Systems/C4-PlantUML/master/C4_Component.puml`
   * Additional Macros: `Component`, `ComponentDb`
 
 Take a look at each of the [C4 Model Diagram Samples](samples/C4CoreDiagrams.md).
