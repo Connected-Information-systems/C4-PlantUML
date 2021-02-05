@@ -18,6 +18,13 @@
 ' Styling
 ' ##################################
 
+skinparam actor {
+    StereotypeFontColor ELEMENT_FONT_COLOR
+    FontColor ELEMENT_FONT_COLOR
+    BackgroundColor PERSON_BG_COLOR
+    BorderColor #073B6F
+}
+
 skinparam rectangle<<person>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
